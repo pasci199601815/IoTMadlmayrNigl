@@ -27,7 +27,7 @@ Learn about basics of IoT, what makes it special and how to use hardware correla
 The internet of things (IoT) is a computing concept that describes the idea of everyday physical objects being connected to the internet and being able to identify themselves to other devices. The term is closely identified with RFID (Near Field Communication NFC) as the method of communication, although it also may include other sensor technologies (pressure, fluid, temperature …) wireless technologies or QR codes.
 
 ## Domains:
-* mart Homes, Refrigerators
+* Smart Homes, Refrigerators
 * Wearables, my Smartwatch (Galaxy Watch)
 * Power Engagement
 * Home Automation
