@@ -5,7 +5,7 @@
 * Kotlin
 * Ionic
 * C++
-*C
+* C
 
 ## What have you done with micro controllers, which ones have you used? (Like Arduino, ESP8266, Particle/Photon)?
 In terms of dealing with micro controllers I am pretty unexperienced as of now, the only time I dealt with micro controllers was with a Texas Instruments MSP-432 in 4th Semester (Hardwarenahe Programmierung).
