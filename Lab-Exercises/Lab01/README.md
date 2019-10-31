@@ -116,7 +116,7 @@ void loop() {
 const char* ssid = "iotempire-MadlmayrNigl";
 const char* password = "madlmayrnigl";
 
-ESP8266WebServer server(3333); 
+ESP8266WebServer server(1337); 
 
 int state = 0;
 
