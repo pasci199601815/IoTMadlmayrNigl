@@ -8,7 +8,7 @@
 + We send a message successful but never received it
 + At home we noticed we configured out ifttt false
 
-# Temperator Sensor (tried at Home, but failed :/)
+# Temperatursensor (tried at Home, but failed :/)
 
 ````
 int ThermistorPin = D5;
