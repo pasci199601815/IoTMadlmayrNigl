@@ -69,7 +69,7 @@ https://swapi.co/
   "children": [],
   "spouse": null
 }
-```` 
+````
 ## BLE
 Bluetooth Low Energy is intended to provide considerably reduced power consumption and cost while maintaining a similar communication range. Mobile operating systems including iOS, Android as well as macOS, Linux, Windows 8 and Windows 10, natively support Bluetooth Low Energy.
 ## Example
