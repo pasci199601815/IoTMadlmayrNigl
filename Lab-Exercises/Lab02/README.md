@@ -8,6 +8,32 @@
 + We send a message successful but never received it
 + At home we noticed we configured out ifttt false
 
+# Temperatursensor (tried at Home, but failed :/)
+
+````
+int ThermistorPin = D5;
+int Vo;
+float R1 = 10000; // value of R1 on board
+float logR2, R2, T;
+float c1 = 0.001129148, c2 = 0.000234125, c3 = 0.0000000876741; //steinhart-hart coeficients for thermistor
+
+void setup() {
+  Serial.begin(9600);
+}
+
+void loop() {
+    Vo = analogRead(ThermistorPin);
+  R2 = R1 * (1023.0 / (float)Vo - 1.0); //calculate resistance on thermistor
+  logR2 = log(R2);
+  T = (1.0 / (c1 + c2*logR2 + c3*logR2*logR2*logR2)); // temperature in Kelvin
+  T = T - 273.15; //convert Kelvin to Celcius
+ // T = (T * 9.0)/ 5.0 + 32.0; //convert Celcius to Farenheit
+
+  Serial.print("Temperature: "); 
+  Serial.print(T);
+  Serial.println(" C"); 
+}
+````
 # First Story
 ## Home gateways 
 Herbert is watching the news on his Xiaomi Mi Smart TV. It’s a late winter night and it’s getting colder. He opened the tilt windows in his living room before to get some fresh air. As the room temperature drops below 25 C°, the windows close automatically. The light changes accordingly to a deep white, because it’s getting warmer. He’s done watching TV, so he tells Alexa to shut down: “Alexa, shut down the TV”.  He’s hungry, he goes in the kitchen. He looks at the screen of his smart fridge and sees all the products in his fridge. On the list he sees that he needs more milk, so he presses order on the fridge, then the fridge sends a request to his amazon account to order. He goes to sleep. When his alarm goes off in the morning, all blinds open automatically, and the smart bulbs dimly light up. There plays annoying ring tone from his boxes. He turns off the alarm with his smart watch. His smart watch rings, so he knows his milk and eggs arrived. He looks at his phone and got a recipe from his amazon account. To get ready for work he starts his tesla on his phone, his tesla drives out of his garage.
