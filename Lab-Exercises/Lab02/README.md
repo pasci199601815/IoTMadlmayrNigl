@@ -1,161 +1,25 @@
 # The Workflow - Lab Outline
-+ Setup Raspberry Pi iot gateway based on IoTempower image
-+ Setup key and ssh into it or use web access
-+ Learn to blink an (if exists the onboard) LED on ESP8266 with Arduino IDE
-+ Login to WiFi of iot gateway from ESP8266
-+ Switch on/off blinking remotely
-+ Program second esp8266, connect to same network, connect button, use
-button to switch on/off the blinking on other ESP8266
-+ work in pairs
-+ Document everything also (especially) failures → in portfolio git folder,
-“just” link to shared work, after lecture, re-visit at home and reflect on
-lecture and lab (train your memory AND critical thinking skill)
++ Discuss what to do
++ Discuss what story we should write
++ Tried Story
++ Uli validated our story and gave some tips
++ Then we tried to message telegram with ifttt
++ This took lots of time to research how to work with ifttt
++ We send a message successful but never received it
++ At home we noticed we configured out ifttt false
 
+# First Story
+## Home gateways 
+Herbert is watching the news on his Xiaomi Mi Smart TV. It’s a late winter night and it’s getting colder. He opened the tilt windows in his living room before to get some fresh air. As the room temperature drops below 25 C°, the windows close automatically. The light changes accordingly to a deep white, because it’s getting warmer. He’s done watching TV, so he tells Alexa to shut down: “Alexa, shut down the TV”.  He’s hungry, he goes in the kitchen. He looks at the screen of his smart fridge and sees all the products in his fridge. On the list he sees that he needs more milk, so he presses order on the fridge, then the fridge sends a request to his amazon account to order. He goes to sleep. When his alarm goes off in the morning, all blinds open automatically, and the smart bulbs dimly light up. There plays annoying ring tone from his boxes. He turns off the alarm with his smart watch. His smart watch rings, so he knows his milk and eggs arrived. He looks at his phone and got a recipe from his amazon account. To get ready for work he starts his tesla on his phone, his tesla drives out of his garage.
 
-# What we did
-+ We got our Hardware
-+ Downloaded the Image
-+ Installed Arduino Software
-+ Downloaded Flasher Software
-+ Flashed SD-Card
-+ Tried connecting to Raspberry Pi with wlan (success)
-+ Wrote our first Arduino Programm to light a LED
-+ First mistake: we used an led that can't pe turned on or off
-+ Second mistake: we compiled our code but didn't use the upload button, took us some time to recognise
-````
-#define led_pin 2
-#define led_interval 100
+# Second Story
+Industry 4.0 Scenario
+Overseer: Adam, Worker: John, Bob
 
-void setup() {
-  pinMode(led_pin, OUTPUT);
-}
-
-void loop() {
-  while(true){
-    digitalWrite(led_pin, HIGH);
-    delay(led_interval);
-    digitalWrite(led_pin, LOW);
-    delay(led_interval);
-   }
-}
-````
-# Homework:Using the Raspberry Pi as Gateway and the two ESP8266 Boards as Server and Client
-## Task:
-+ Both Client and Server connect to Raspberry Pi
-+ Client pushes Button, sends an HTTP-GET Request with an message (/data/)
-+ Server recognizes the Request, toggles the inbuilt LED
-
-## How we achieved the Goal:
-
-Down below we included the source code for both the Client and the Server
-
-### The Client:
-
-````
-#include <ESP8266WiFi.h>
-
-// define pin D5 to button, Users choice which pin to use
-int button = D5;
-
-
-const char* ssid = "iotempire-MadlmayrNigl";
-const char* password = "madlmayrnigl";
- 
-
-void setup() {
-  
-  //Should be the same as board setting in Arduino IDE
-  Serial.begin(115200);
-
-  pinMode(button, INPUT);
-
-  delay(10);
-
-  // Use Wi-Fi Mode, not access point mode, problems occured when using access point mode
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
-  
-  
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.println("Connecting.....");
-  }
-
-}
-
-void loop() {
- WiFiClient client;
-
-  // IP Address depends on which IP the Server gets assigned by the Raspberry Pi Gateway
-  const char * host = "192.168.12.209";
-  const int httpPort = 1337;
-  
-  if (!client.connect(host, httpPort)) {
-    Serial.println("connection failed");
-    return;
-  }
-
-  // Unique message on which the server should react upon with toggling the led
-  String url = "/data/";
-  // Button gets pressed, Request is Sent to the Server
-  if(digitalRead(button) != 1){ 
-    // This will send the request to the server
-    client.print(String("GET ") + url + " HTTP/1.1\r\n" +
-                 "Host: " + host + "\r\n" +
-                 "Connection: close\r\n\r\n");
-  }
-  delay(100);
-}
-````
-
-### The Server:
-````
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
-
-const char* ssid = "iotempire-MadlmayrNigl";
-const char* password = "madlmayrnigl";
-
-ESP8266WebServer server(1337); 
-
-int state = 0;
-
-void setup() {
-  Serial.begin(115200);
-
-  pinMode(LED_BUILTIN, OUTPUT);
-  
-  WiFi.begin(ssid, password);
-Serial.println("ssid pw.....");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.println("Connecting.....");
-  }
-  
-  // Print the IP address in the debug console to use it in the clients source code
-  Serial.println(WiFi.localIP());
-
-  server.on("/data/", HTTP_GET, SwitchLED); // server receives correct request contents, invokes SwitchLED-method
-  server.begin();
-
-}
-
-void loop() {
-  server.handleClient();
-
-  delay(50);
-}
-
-void SwitchLED() {
-  // switch LED between High and LOW upon receiving GET Request, effective toggle
-  digitalWrite(LED_BUILTIN, (state)? HIGH : LOW);
-  state = !state;
-  delay(50);
-  Serial.println("Toggle LED");
-  
-}
-````
-### Steps
-
-
-
+Adam works and lives in Linz, Austria. He keeps his House simple, no extra Gadgets or Toys that may help to live an easier life. He takes public transportations to get to his work, where he is responsible for a handful of workers for example Bob.
+John lives very close to the factory he works at and every morning, if it’s not too cold, he rides the bike to work, otherwise he takes the bus. In his house he and his fiancée have an amazon echo device which they use frequently even for the smallest things, like turning lights on or off.
+Bob lives with his two roommates near the center of the city and drives his own car to work.
+In the morning Adam gets new notifications of what he and his workers should accomplish that day. They finish most of their work from the day before, except one project. That project is still on the list for the new day, as top priority. Adam then chooses worker/workers for each project that is on his screen. For the started project from the day before, a bar on the screen showing, that it’s about 65% done.
+Bob could not finish his last project from yesterday since some small parts were missing, but as he starts his system, he gets a notification, that the missing parts arrived and he can finish the project on addition he also gets 2 more for the day. Bob chooses the almost finished project and sees pulsing green light on the screen signifying him where the missing parts have arrived so he goes and picks them up. When he comes back, he records that he picked up the parts with the current time. Now he can see a model of the project and the areas where those parts have to be installed at are highlighted. After he has finished his work on that project, he sends a notification to his overseer Adam and to another worker from a different department, John, so he can deliver the project elsewhere. 
+After working some time on his new project John gets a notification, that he can pick up a project that he was supposed to get yesterday. He immediately stops his current work and puts it aside to finish said project. After he picked it up, he records that he has the project now and starts working on it.
+At the end of the day Adam looks up all the projects of the day and records them and their state in a table that is send to his supervisor so he could check if everything is going well.
