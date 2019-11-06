@@ -1,161 +1,111 @@
-# The Workflow - Lab Outline
-+ Setup Raspberry Pi iot gateway based on IoTempower image
-+ Setup key and ssh into it or use web access
-+ Learn to blink an (if exists the onboard) LED on ESP8266 with Arduino IDE
-+ Login to WiFi of iot gateway from ESP8266
-+ Switch on/off blinking remotely
-+ Program second esp8266, connect to same network, connect button, use
-button to switch on/off the blinking on other ESP8266
-+ work in pairs
-+ Document everything also (especially) failures → in portfolio git folder,
-“just” link to shared work, after lecture, re-visit at home and reflect on
-lecture and lab (train your memory AND critical thinking skill)
-
-
-# What we did
-+ We got our Hardware
-+ Downloaded the Image
-+ Installed Arduino Software
-+ Downloaded Flasher Software
-+ Flashed SD-Card
-+ Tried connecting to Raspberry Pi with wlan (success)
-+ Wrote our first Arduino Programm to light a LED
-+ First mistake: we used an led that can't pe turned on or off
-+ Second mistake: we compiled our code but didn't use the upload button, took us some time to recognise
-````
-#define led_pin 2
-#define led_interval 100
-
-void setup() {
-  pinMode(led_pin, OUTPUT);
-}
-
-void loop() {
-  while(true){
-    digitalWrite(led_pin, HIGH);
-    delay(led_interval);
-    digitalWrite(led_pin, LOW);
-    delay(led_interval);
-   }
-}
-````
-# Homework:Using the Raspberry Pi as Gateway and the two ESP8266 Boards as Server and Client
-## Task:
-+ Both Client and Server connect to Raspberry Pi
-+ Client pushes Button, sends an HTTP-GET Request with an message (/data/)
-+ Server recognizes the Request, toggles the inbuilt LED
-
-## How we achieved the Goal:
-
-Down below we included the source code for both the Client and the Server
-
-### The Client:
-
 ````
 #include <ESP8266WiFi.h>
+#include <ESP8266WiFiAP.h>
+#include <ESP8266WiFiGeneric.h>
+#include <ESP8266WiFiMulti.h>
+#include <ESP8266WiFiScan.h>
+#include <ESP8266WiFiSTA.h>
+#include <ESP8266WiFiType.h>
+#include <WiFiClient.h>
+#include <WiFiClientSecure.h>
+#include <WiFiServer.h>
+#include <WiFiUdp.h>
+#include <coap-simple.h>
 
-// define pin D5 to button, Users choice which pin to use
-int button = D5;
-
-
-const char* ssid = "iotempire-MadlmayrNigl";
+const char* ssid     = "iotempire-MadlmayrNigl";
 const char* password = "madlmayrnigl";
- 
 
-void setup() {
+// CoAP client response callback
+void callback_response(CoapPacket &packet, IPAddress ip, int port);
+
+// CoAP server endpoint url callback
+void callback_light(CoapPacket &packet, IPAddress ip, int port);
+
+// UDP and CoAP class
+WiFiUDP udp;
+Coap coap(udp);
+
+// LED STATE
+bool LEDSTATE;
+
+// CoAP server endpoint URL
+void callback_light(CoapPacket &packet, IPAddress ip, int port) {
+  Serial.println("[Light] ON/OFF");
   
-  //Should be the same as board setting in Arduino IDE
-  Serial.begin(115200);
+  // send response
+  char p[packet.payloadlen + 1];
+  memcpy(p, packet.payload, packet.payloadlen);
+  p[packet.payloadlen] = NULL;
+  
+  String message(p);
 
-  pinMode(button, INPUT);
+  if (message.equals("0"))
+    LEDSTATE = false;
+  else if(message.equals("1"))
+    LEDSTATE = true;
+      
+  if (LEDSTATE) {
+    digitalWrite(LED_BUILTIN, HIGH) ; 
+    coap.sendResponse(ip, port, packet.messageid, "1");
+  } else { 
+    digitalWrite(LED_BUILTIN, LOW) ; 
+    coap.sendResponse(ip, port, packet.messageid, "0");
+  }
+}
 
-  delay(10);
-
-  // Use Wi-Fi Mode, not access point mode, problems occured when using access point mode
-  WiFi.mode(WIFI_STA);
+// CoAP client response callback
+void callback_response(CoapPacket &packet, IPAddress ip, int port) {
+  Serial.println("[Coap Response got]");
+  
+  char p[packet.payloadlen + 1];
+  memcpy(p, packet.payload, packet.payloadlen);
+  p[packet.payloadlen] = NULL;
+  
+  Serial.println(p);
+}
+void setup() {
+  Serial.begin(9600);
   WiFi.begin(ssid, password);
-  
-  
   while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.println("Connecting.....");
+      delay(500);
+      Serial.print(".");
   }
 
-}
+  Serial.println("");
+  Serial.println("WiFi connected");
+  Serial.println("IP address: ");
+  Serial.print(WiFi.localIP());
 
-void loop() {
- WiFiClient client;
-
-  // IP Address depends on which IP the Server gets assigned by the Raspberry Pi Gateway
-  const char * host = "192.168.12.209";
-  const int httpPort = 1337;
-  
-  if (!client.connect(host, httpPort)) {
-    Serial.println("connection failed");
-    return;
-  }
-
-  // Unique message on which the server should react upon with toggling the led
-  String url = "/data/";
-  // Button gets pressed, Request is Sent to the Server
-  if(digitalRead(button) != 1){ 
-    // This will send the request to the server
-    client.print(String("GET ") + url + " HTTP/1.1\r\n" +
-                 "Host: " + host + "\r\n" +
-                 "Connection: close\r\n\r\n");
-  }
-  delay(100);
-}
-````
-
-### The Server:
-````
-#include <ESP8266WiFi.h>
-#include <ESP8266WebServer.h>
-
-const char* ssid = "iotempire-MadlmayrNigl";
-const char* password = "madlmayrnigl";
-
-ESP8266WebServer server(1337); 
-
-int state = 0;
-
-void setup() {
-  Serial.begin(115200);
-
+  // LED State
   pinMode(LED_BUILTIN, OUTPUT);
+  digitalWrite(LED_BUILTIN, HIGH);
+  LEDSTATE = true;
   
-  WiFi.begin(ssid, password);
-Serial.println("ssid pw.....");
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.println("Connecting.....");
-  }
-  
-  // Print the IP address in the debug console to use it in the clients source code
-  Serial.println(WiFi.localIP());
+  // add server url endpoints.
+  // can add multiple endpoint urls.
+  // exp) coap.server(callback_switch, "switch");
+  //      coap.server(callback_env, "env/temp");
+  //      coap.server(callback_env, "env/humidity");
+  Serial.println("Setup Callback Light");
+  coap.server(callback_light, "light");
 
-  server.on("/data/", HTTP_GET, SwitchLED); // server receives correct request contents, invokes SwitchLED-method
-  server.begin();
+  // client response callback.
+  // this endpoint is single callback.
+  Serial.println("Setup Response Callback");
+  coap.response(callback_response);
 
+  // start coap server/client
+  coap.start();
 }
 
 void loop() {
-  server.handleClient();
-
-  delay(50);
+  delay(1000);
+  coap.loop();
 }
-
-void SwitchLED() {
-  // switch LED between High and LOW upon receiving GET Request, effective toggle
-  digitalWrite(LED_BUILTIN, (state)? HIGH : LOW);
-  state = !state;
-  delay(50);
-  Serial.println("Toggle LED");
-  
-}
+/*
+if you change LED, req/res test with coap-client(libcoap), run following.
+coap-client -m get coap://(arduino ip addr)/light
+coap-client -e "1" -m put coap://(arduino ip addr)/light
+coap-client -e "0" -m put coap://(arduino ip addr)/light
+*/
 ````
-### Steps
-
-
-
