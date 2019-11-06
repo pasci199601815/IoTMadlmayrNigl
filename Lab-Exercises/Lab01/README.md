@@ -155,7 +155,3 @@ void SwitchLED() {
   
 }
 ````
-### Steps
-
-
-
