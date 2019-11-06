@@ -1,6 +1,5 @@
 # Recap
-+ Big lab exercices, sometimes overwhelming when working first time with some technologys
-+ Interesting new Topics
-+ Get lots of informations out of one exercise
-+ Still sometimes confusing what to do or how to do it but better then last time
-+ Fun to work in groups
++ This time we got most of the things to work
++ Gets more clear what to do
++ Still always much to do at home but i guess we need to get faster in the lab :)
++ Ulrich always helps with problems so it gets clearer
