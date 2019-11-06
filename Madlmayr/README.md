@@ -7,6 +7,7 @@
 + [Lecture 4](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/ResearchReports/Lecture04)
 ## Lab Reports
 + [Lab 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab01)
++ [Lab 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab02)
 
 ## Recaps
 + [Recap 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture01_Recaps)
