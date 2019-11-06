@@ -10,3 +10,4 @@
 
 ## Recaps
 + [Recap 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture01_Recaps)
++ [Recap 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture02_Recaps)
