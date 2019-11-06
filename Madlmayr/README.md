@@ -9,4 +9,4 @@
 + [Lab 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab01)
 
 ## Recaps
-+ [Recap 1]((https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture01_Recap)
++ [Recap 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture01_Recap)
