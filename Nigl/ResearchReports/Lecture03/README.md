@@ -1,64 +1,77 @@
-# Reasearch these things
-## Cloud
-computing is the delivery of computing services—including servers, storage, databases, networking, software, analytics, and intelligence—over the Internet (“the cloud”). You typicall pay only for cloud services you use.
-### Example
-+ Online-Storages
-+ Server farms
-## Edge
-Edge Computing is the delivery of computing services on the edge of a network, so on the end device
-### Example
-+ Gateway
-+ Router
-+ Mobile devices
-## Fog
-Fog happens between Cloud and Edge, it delivery computing services on more devices between the central server and the end device.
-### Example
-+ Wind Farms
-+ Oil Wells
-## Relation?
-They are layers that tells where the magic happens
-# Research for Controller
-## RS232
-+ Very Old
-+ Max length is 15m
-+ With special cable 300m
-+ Used for mouse, keyboard and modems.
-+ Serial Communication
-+ Not used anymore really
-## RS485
-+ Twistet Pair cable, with 2 full duplex
-+ Speed up to 10Mbit/s
-+ Max length 1200m with low speed
-+ Huge fall of large distance
-+ Physical layer for ICs Modbus, and on that there is a other protocol.
-+ Vehicle bus
-## I2C
-Inter-Integrated Circuit
-
-synchronous, multi-master, multi-slave, packet switched, single-ended, serial computer bus
-attaching lower-speed peripheral ICs to processors and microcontrollers in short-distance, intra-board communication. 
-I²C is appropriate for peripherals where simplicity and low manufacturing cost are more important than speed.
-
-### Length
-I2C link is about 1 meter at 100 Kbaud, or 10 meters at 10 Kbaud
-### Speed
-Common I²C bus speeds are the 100 kbit/s standard mode and the 400 kbit/s Fast mode. There is also a 10 kbit/s low-speed mode, but arbitrarily low clock frequencies are also allowed. Recent revisions of I²C can host more nodes and run at faster speeds (400 kbit/s Fast mode, 1 Mbit/s Fast mode plus, 3.4 Mbit/s High Speed mode, and 5 Mbit/s Ultra Fast-mode). These speeds are more widely used on embedded systems than on PCs.
-### Example
-+ Integrated circles
-+ Accessing real-time clocks and NVRAM chips that keep user settings.
-+ Reading hardware monitors and diagnostic sensors, e.g. a fan's speed.
-+ Turning on and turning off the power supply of system components. 
-## SPI
-Used to send data between micro controllers or peripherals
-### Wiring
-+ Four wiring bus
-+ Signal modes
-+ SCK (serial clock)
-+ SDI (serial data in)
-### Speed
-+ Clock: 1,5MHz 
-### Length
-3 meters
-### Examples
-+ Sensors
-+ SD cards
+# How to speak IoT
+## Binary
+BINEX, for "BINary EXchange", is an operational binary format standard for research and operational purposes. The format has been designed to grow and allow encapsulation of any data or metadata allowed in the common ASCII exchange formats.
++ more efficient in storing
++ more speed of access
+-	Not human readable
+-	No comments
+The two designs for the regular CRC generalized record structure are:
+````
+      1 byte:     synchronization byte, also containing
+                  little/big endian bit for record
+      1-4 bytes:  record ID
+      1-4 bytes:  record message length in bytes
+     [1-4 bytes]: bit-flipped 1-4 bytes of record message length (enhanced CRC only!)
+      n bytes:    record message
+      1-16 bytes: checksum or CRC (of ID, length, and message bytes)
+and
+      1 byte:     leading synchronization byte, also containing
+                  little/big endian bit for record message
+      1-4 bytes:  record ID
+      1-4 bytes:  record message length in bytes
+     [1-4 bytes]: bit-flipped 1-4 bytes of record message length (enhanced CRC only!)
+      n bytes:    record message
+      1-16 bytes: checksum or CRC (of ID, length, and message bytes)
+      1-4 bytes:  total number of bytes in:
+                    • leading synchronization byte
+                    • record ID
+                    • record message length
+                    • record message
+                    • checksum or CRC
+                  with bytes in reverse order
+      1 byte:     terminating synchronization byte, also containing
+                  little/big endian bit for record message
+````
+## JSON
+JavaScript Object Notation
+JSON is an exchange format that uses human readable-text to transmit data objects consisting of attribute–value pairs and array data types (or any other serializable value). It is a very common data format, with a diverse range of applications, such as serving as replacement for XML in AJAX systems.
++ easy to use
++ widely used
+https://swapi.co/
+-	No error handling
+-	Can be hacked 
+````
+{
+  "firstName": "John",
+  "lastName": "Smith",
+  "isAlive": true,
+  "age": 27,
+  "address": {
+    "streetAddress": "21 2nd Street",
+    "city": "New York",
+    "state": "NY",
+    "postalCode": "10021-3100"
+  },
+  "phoneNumbers": [
+    {
+      "type": "home",
+      "number": "212 555-1234"
+    },
+    {
+      "type": "office",
+      "number": "646 555-4567"
+    },
+    {
+      "type": "mobile",
+      "number": "123 456-7890"
+    }
+  ],
+  "children": [],
+  "spouse": null
+}
+```` 
+## BLE
+Bluetooth Low Energy is intended to provide considerably reduced power consumption and cost while maintaining a similar communication range. Mobile operating systems including iOS, Android as well as macOS, Linux, Windows 8 and Windows 10, natively support Bluetooth Low Energy.
+## Example
++ Nike Fuelband
++ Most of the industry uses BLE instead of normal Bluetooth, its just better
