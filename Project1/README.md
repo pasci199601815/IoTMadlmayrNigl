@@ -188,5 +188,8 @@ Buzzer sensor is installed easily with IOTempore. We need just one line:
 pwm(buzzer, D6, 0);
 ````
 
-## Story
+## Use Case - Story
+
+### Robert checks his houseboat's fuel tank via a distance sensor and the power of IoT
+It is a chill morning in the midst of July, 2019. Robert, an experienced engineer, wakes up on his house boat and his first thought is about checking his smart watch, whether it rained last night. His smart watch notifies him that it indeed rained last night, so Robert dresses up, grabs a towel and makes his way onto the deck. As he arrives he sees that the clouds already cleared up, but he still has to dry his Hollywood swing. He takes a seat, watches the beautiful sunrise and therefore decides, that it is indeed time for a little trip exploring Austrias biggest lake, Attersee. As he takes his seat on the starboard, his watch again pleads for his attention. He swiftly turns his wrist and sees that his fuel tank is running low, because the embedded distance sensor reports a low amount of fuel. He then decides to refill at the shore before continuing his trip. He sighs and makes his way back.
 
