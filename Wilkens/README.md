@@ -12,6 +12,6 @@
 + [Lab 4](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab04)
 
 ## Recaps
-+ [Lecture 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Recaps/Lecture01)
-+ [Lecture 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Recaps/Lecture02)
-+ [Lecture 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Recaps/Lecture03)
++ [Lecture 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Recaps/Lecture%2001)
++ [Lecture 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Recaps/Lecture%2002)
++ [Lecture 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Recaps/Lecture%2003)
