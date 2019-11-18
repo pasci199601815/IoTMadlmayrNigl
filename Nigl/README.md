@@ -13,3 +13,11 @@
 + [Lecture 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture01)
 + [Lecture 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture02)
 + [Lecture 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture03)
++ [Lecture 4](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture04)
++ [Lecture 5](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture05)
++ [Lecture 6](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture06)
++ [Lecture 7](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture07)
++ [Lecture 8](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture08)
++ [Lecture 9](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture09)
++ [Lecture 10](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture10)
+
