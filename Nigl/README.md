@@ -5,6 +5,10 @@
 + [Lecture 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture02)
 + [Lecture 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture03)
 + [Lecture 4](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture04)
++ [Lecture 5](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture05)
++ [Lecture 6](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture06)
++ [Lecture 7](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture07)
++ [Lecture 10](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture010)
 ## Lab Records
 + [Lab 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab01)
 + [Lab 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab02)
