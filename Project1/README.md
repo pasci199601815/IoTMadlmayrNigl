@@ -176,3 +176,17 @@ void loop(){
    delay(1000);
 }
 ````
+### Ultrasonic
+Ultrasonic sensor is installed easily with IOTempore. We need just one line:
+````
+hcsr04(distance, D6, D5).with_precision(10);
+````
+
+### Buzzer
+Buzzer sensor is installed easily with IOTempore. We need just one line:
+````
+pwm(buzzer, D6, 0);
+````
+
+## Story
+
