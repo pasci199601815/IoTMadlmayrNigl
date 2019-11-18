@@ -1,9 +1,9 @@
 # Portfolio Henrik Wilkens
 
 ## Research Records
-+ [Record 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research Records/Report 1)
-+ [Record 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research Records/Report 2)
-+ [Record 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research Records/Report 3)
++ [Record 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%201)
++ [Record 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%202)
++ [Record 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%203)
 
 ## Lab Records
 + [Lab 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab01)
