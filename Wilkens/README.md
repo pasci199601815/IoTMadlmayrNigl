@@ -5,7 +5,7 @@
 + [Report 02](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%202)
 + [Report 03](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%203)
 + [Report 08](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%208)
-+ [Report 10](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%210)
++ [Report 10](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Research%20Records/Report%2010)
 
 ## Lab Records
 + [Lab 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab01)
