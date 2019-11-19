@@ -24,3 +24,11 @@
 ## Recaps
 + [Recap 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture01_Recaps)
 + [Recap 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture02_Recaps)
++ [Recap 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture03_Recaps)
++ [Recap 4](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture04_Recaps)
++ [Recap 5](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture05_Recaps)
++ [Recap 6](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture06_Recaps)
++ [Recap 7](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture07_Recaps)
++ [Recap 8](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture08_Recaps)
++ [Recap 9](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Madlmayr/Recaps/Lecture09_Recaps)
++ [Recap 10](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture10_Recaps)
