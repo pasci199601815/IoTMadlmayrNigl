@@ -1,5 +1,5 @@
 # The Workflow - Lab Outline
-+ Urlich flashed our dongle on a WEMOS and 2 other esp's with the pre_flash
++ Ulrich flashed our dongle on a WEMOS and 2 other esp's with the pre_flash
 + we researched the doku a bit and then tried to adobt our first node
 + this worked fine for the first one
 + we didn't realise at first that we need to create new folder for new nodes so we struggled a bit to flash the second esp
