@@ -135,7 +135,7 @@ void loop() {
 ## Regentropf Sensor Tabelle
 |Trinkwasser|Schmutzwasser|Öl|
 |---|---|---|
-|~277– wet|~185– wet|921 dry|
+|~277 wet|~185 wet|921 dry|
 
 Temperature sensor is installed easily with IOTempore. We need just one line:
 ````
