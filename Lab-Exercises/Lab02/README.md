@@ -15,6 +15,14 @@
 
 [Click here for the sourcecode](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab02/clientbutton.ino)
 
+
+# Figure out how to use I2C 2 lines display (send data remotely)
+
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab02/iffft.jpg)
+
+[Click here for the sourcecode](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab02/i2cdisplay.ino)
+
+
 # Temperatursensor (tried at Home, but failed :/)
 
 ````
