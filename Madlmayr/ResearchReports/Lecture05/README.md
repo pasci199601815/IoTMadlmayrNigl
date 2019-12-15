@@ -30,4 +30,4 @@ return msg;
 # (TA) 
 
 ## Flogo
-Anna Spiegelmayr gave me some very helpful tips, how to configure the In- and Out-Section and how to implement the integrator via branching (more in lab report)
+Anna Spiegelmayr gave us some very helpful tips, how to configure the In- and Out-Section and how I can implement the integrator via branching (more in lab report)
