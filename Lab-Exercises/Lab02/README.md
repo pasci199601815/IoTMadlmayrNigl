@@ -10,10 +10,10 @@
 
 # Create Button Device, which triggers via HTTP Post to IFTTT WebHook
 
-![Click here for the sourcecode](https://github.com/pasci199601815/IoTMadlmayrNigl/edit/master/Lab-Exercises/Lab02/iffft.jpg)
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab02/iffft.jpg)
 
 
-[Click here for the sourcecode](https://github.com/pasci199601815/IoTMadlmayrNigl/edit/master/Lab-Exercises/Lab02/clientbutton.ino)
+[Click here for the sourcecode](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab02/clientbutton.ino)
 
 # Temperatursensor (tried at Home, but failed :/)
 
