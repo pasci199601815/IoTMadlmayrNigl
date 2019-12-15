@@ -55,6 +55,8 @@
 + Harald Burgstaller helped me with toggeling the LED with our WEMOS
 + Ulrich helped us in every Lab with most of our problems ;)
 
+
+
 + I helped Micheal Wachlhofer and Anna Spiegelmayer with setting up IOTEmpower
 + I helped Micheal Leister with Node-Red (sent him old script)
 + I helped Micheal Wachlhofer with calibration the scale and get infos from mqtt topic 
@@ -62,13 +64,19 @@
 ## Video bewertung
 ### IOT Vineyard:
 Most entertaining video
+
 Good visuals
+
 Not a big fan of the machine voices
 ### IOT Museum:
 Audio qualiy not the best
+
 Good demonsration of sensors trough the video
+
 Sometimes dull
 ### IOT Fitness:
 Very funnny
+
 Nicely made with the cardboard sensors
+
 Last part too long with nodered
