@@ -15,3 +15,5 @@ The recreation of the node-red integrator looks as following:
 ![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab05/iotflogo.png)
 
 It fullfills the same task of sending an MQTT-Message as soon as the temperature treshold is surpassed. 
+
+Anna Spiegelmayr gave me some very helpful tips, how to configure the In- and Out-Section and how to implement the integrator via branching
