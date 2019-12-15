@@ -6,6 +6,9 @@
 + After that we tried to adjust a LED with the Arduino code below
 + There were no problems because we used the example and changed a few lines to get this to work
 
+### Here is how the COAP Example looked like
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab03/coap.jpg "coap")
+
 [Arduino Code](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab03/coap.ino)
 
 ## MQTT
