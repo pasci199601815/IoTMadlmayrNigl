@@ -10,6 +10,10 @@ Temperature sensor is installed easily with IOTempore. We need just one line to 
 ````
 dht(temp, D7);
 ````
+for power saving we can add sleep ability to our sensors:
+````
+sleep(dht(temp, D7));
+````
 Other option can be with arduino, but its little bit more code:
 ````
 #include <OneWire.h>
