@@ -185,7 +185,7 @@ void loop(){
 ### Ultrasonic
 
 # Ultraschall Sensor Tabelle
-## Ultraschall Sensor (Gabriel)
+
 
 |Trinkwasser|Schmutzwasser|Öl|
 |---|---|---|
