@@ -21,8 +21,10 @@
 + [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture07)
 + [Recap](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture07)
 ## Day8
++ [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture08)
 + [Recap](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture08)
 ## Day9
++ [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture09)
 + [Recap](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture09)
 ## Day10
 + [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture010)
@@ -33,15 +35,6 @@
 ## Day12
 + [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture012)
 + [Recap](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture12)
-
-## ResearchRecords
-
-
-
-
-
-
-
 
 ## Lab Records
 + [Lab 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab01)
