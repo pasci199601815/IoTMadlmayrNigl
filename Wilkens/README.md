@@ -52,9 +52,15 @@
 + [Lab 2](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab02)
 + [Lab 3](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab03)
 + [Lab 4](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab04)
++ [Lab 5](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab05)
++ [Lab 6](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab06)
++ [Lab 7](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab07)
++ [Lab 8](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab08)
++ [Lab 9](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab09)
 
 ## Projects
 + [Project 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Project1)
++ [Project 2](https://drive.google.com/file/d/1mhy01Uc7yZ5n6DLwcsP5O0r23wMvCdMc/view)
 
 ### Additional Information
 + [Information](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Wilkens/Additional%20Info)
