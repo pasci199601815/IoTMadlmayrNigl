@@ -1,6 +1,6 @@
 # The Workflow - Lab Outline
 
-##Rgb-strip + animation on wemos led shield (in IoTempower)
+## Rgb-strip + animation on wemos led shield (in IoTempower)
 – make 2x3 leds fade from one color to the other by command from mqtt
 - these two animations can run/triggered by mqtt independently from each other
 – all leds as lightning (random flashing in white) + thunder when triggering in node-red
