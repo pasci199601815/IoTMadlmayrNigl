@@ -131,6 +131,12 @@ void loop() {
 }
 ````
 ### Raindropsensor
+
+## Regentropf Sensor Tabelle
+|Trinkwasser|Schmutzwasser|Öl|
+|---|---|---|
+|~277– wet|~185– wet|921 dry|
+
 Temperature sensor is installed easily with IOTempore. We need just one line:
 ````
 analog(fluids).with_precision(10).with_threshold(500, "wet", "dry");
@@ -177,6 +183,16 @@ void loop(){
 }
 ````
 ### Ultrasonic
+
+# Ultraschall Sensor Tabelle
+## Ultraschall Sensor (Gabriel)
+
+|Trinkwasser|Schmutzwasser|Öl|
+|---|---|---|
+|7,5cm|7,5cm|7,5cm|
+
+Der Ultraschallsensor liefert unabhängig von der Art der Flüssigkeit korrekte Werte und eignet sich damit, um den Füllstand eines Tankes messen zu können.
+
 Ultrasonic sensor is installed easily with IOTempore. We need just one line:
 ````
 hcsr04(distance, D6, D5).with_precision(10);
