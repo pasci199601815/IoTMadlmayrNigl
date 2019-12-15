@@ -21,4 +21,4 @@ hx711(scale, D5, D6, 385, true);
 ````
 We then calibrated the scale by sending MQTT-messages to a specific topic and then used the 50- and 100-grams weights to get correct readings on our node red dashboard:
 
-![](https://github.com/pasci199601815/IoTMadlmayrNigl/edit/master/Lab-Exercises/Lab07/scale.jpg)
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab07/scale.jpg)
