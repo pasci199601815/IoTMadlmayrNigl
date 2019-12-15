@@ -27,3 +27,6 @@ hcsr04(distance, D6, D5).with_precision(10);
 buzzer
 pwm(buzzer, D6, 0);
 ````
+
+## An example picture of the used ultrasonic sensor
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab06/acoustic.jpg)
