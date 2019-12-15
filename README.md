@@ -18,3 +18,9 @@ Members of this Repository:
 [BoatProject](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Project1)
 ## Project 2
 [IOTGreenhouse](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Project2)
+
+## Teammates for Project 2 and the associated Labs were:
++ Michael Wachlhofer - S1710237038
++ Anna Spiegelmayr - S1710237031
+
+[Link to their IoT - Repository](https://github.com/DerSpeedMann/IOT)
