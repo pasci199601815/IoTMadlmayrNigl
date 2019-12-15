@@ -62,13 +62,18 @@
 
 + Harald Burgstaller helped me with toggeling the LED with our WEMOS
 
++ Harald also helped me with some wiring (I2C Display) and gave some jumper cables
+
 + Last but not least: Ulrich was very willing to help us and provided us with hints and clues how to solve most problems that occured during the labs (big thank you!)
 ## TA (I helped)
-I helped Micheal Wachlhofer and Anna Spiegelmayr with setting up IOTEmpower
++ I helped Micheal Wachlhofer and Anna Spiegelmayr with setting up IOTEmpower
 
-I helped Martin Rehrl to document his Coap lab exactly (sent him a picture)
++ I helped Martin Rehrl to document his Coap lab exactly (sent him a picture)
 
-I helped Micheal Wachlhofer with calibration the scale and provided the topic names and values for mqtt calibration
++ I helped Micheal Wachlhofer with calibration the scale and provided the topic names and values for mqtt calibration
+
++ I helped Martin Rehrl with displaying contents on the I2C-Display
+
 ## Video Bewertung
 ### IOT Vineyard:
 + Most entertaining video
