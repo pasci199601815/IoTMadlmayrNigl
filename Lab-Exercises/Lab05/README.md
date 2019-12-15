@@ -13,6 +13,6 @@ Thanks to our collegue, Michael Leister, I was able to run Flogo on a non-Pro Ve
 
 The recreation of the node-red integrator looks as following:
  
-![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab05/iotflogo.PNG)
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab05/iotflogo.PNG)
 
 It fullfills the same task of sending an MQTT-Message as soon as the temperature treshold is surpassed.
