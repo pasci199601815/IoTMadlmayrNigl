@@ -1,9 +1,11 @@
 # Boat
 ## Sensors
 ### Temperature
+
 |Trinkwasser|Schmutzwasser|Öl|
 |---|---|---|
 |22°C|22°C|22°C|
+
 Temperature sensor is installed easily with IOTempore. We need just one line to deploy the sensor:
 ````
 dht(temp, D7);
