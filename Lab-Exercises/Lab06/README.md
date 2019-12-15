@@ -8,3 +8,22 @@
 + we then tried the rgb, at first we had some problems because we didn't read the doku precisely so we always talked to the wrong node in mqtt
 + for the acoustic distanc sensor we to build an voltage divider, so we needed some resistors from Ulrich (and some help)
 + the buzzer alarm worked without problems
+
+
+## In this Lab we successfully implemented the following 3 sensors:
++ RGB_LED
++ Ultrasonic (acoustic) distance sensor
++ buzzer
+
+And the following code was in our setup.cpp of the corresponding node in IoTEmpower:
+
+````
+RGB_LED
+rgb_single(RGB_LED, D5, D6, D7, true);
+
+Ultra sonic
+hcsr04(distance, D6, D5).with_precision(10);
+
+buzzer
+pwm(buzzer, D6, 0);
+````
