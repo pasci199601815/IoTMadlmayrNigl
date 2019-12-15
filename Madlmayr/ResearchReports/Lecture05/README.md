@@ -26,3 +26,8 @@ return msg;
 + watching the temperature in your room on a screen
 + a whole dashboard for a system like a smarthome (turning on/off lights and AC, open/close windows ...)
  
+
+# (TA) 
+
+## Flogo
+Anna Spiegelmayr gave me some very helpful tips, how to configure the In- and Out-Section and how to implement the integrator via branching (more in lab report)
