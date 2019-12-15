@@ -214,7 +214,7 @@ pwm(buzzer, D6, 0);
 ````
 ## Node RED
 ### How the Node RED interface looked like
-[click here to view picture](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Project1/gg.jpg)
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Project1/gg.jpg)
 ## Use Case - Story
 
 ### Robert checks his houseboat's fuel tank via a distance sensor and the power of IoT
