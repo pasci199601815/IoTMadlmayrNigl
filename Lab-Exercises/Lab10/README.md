@@ -22,5 +22,5 @@ we then used MQTT-Messages to communicate with our Node RED dashboard
 + amount of LEDs
 
 
-![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab10/lab10nodered.jpg "Node RED LED Stripe")
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Lab-Exercises/Lab10/lab10nodered.png "Node RED LED Stripe")
 
