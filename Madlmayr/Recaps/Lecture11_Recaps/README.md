@@ -5,4 +5,5 @@
 + as Final Resume I can gladly state that I very much enjoyed this module - IoT. It gave me an insight into the evergrowing world of the internet of things and building something ourselves was both challenging but also very fun.
 + I also enjoyed the projects as a challenge to create scenarios for real world applications of our newly collected knowledge
 + the video duration seems to be quite a challenge, but we are positiv that we amount enough content to reach the treshold
++ Creating the video in a 5-students-team was really cool and i enjoyed doing the talkative part in the video
 
