@@ -42,7 +42,7 @@
 ## Day11
 + [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture11)
 + [Recap](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture11)
-+ [Lab 11](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab011)
++ [Lab 11](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab11)
 ## Day12
 + [ResearchRecord](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/ResearchReports/Lecture12)
 + [Recap](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Nigl/Recaps/Lecture12)
