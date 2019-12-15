@@ -1,15 +1,11 @@
-## 3 action to fix the internet
-+	Seperate some things
-+	Pressure the industry for better security
-+ Open security
-## 1 argument to continuing IOT
-+	Nowadays its almost impossible to manage everything by yourself, it makes everything easier.
-## Sensors
-+	Barometer
-+	Gyroscope
-+	Tilt switch
-+	IR reveiver
-+	Obstactle sensore
-+	Line tacking sensor
-+	RFID-RC522
-+	PCF8591
+# IoT Business Opportunities
+## 1. Alert Media
+Alert Media offers monitoring services and a critical communications platform to enterprise customers. The company is changing the mass notifications into useful communications. Alert Media’s cloud-based platform allows its customers to seamlessly send and receive emergency alert notifications from anywhere, at any time. AlertMedia’s mission is to help organizations monitor critical events such as natural disasters, network outages, terrorist attacks, and active shooter scenarios.
+In January, AlertMedia secured $25 million in its Series C funding round led by Silverton Partners, ATX Seed, and Next Coast Ventures. The company has raised $42 million so far and generates $8.8 million in revenue annually.
+Businesses are also using the Alert Media platform for operational activities and regular business communications regarding dispatching and scheduling. The platform is highly scalable, has a flexible API, and is compatible with many devices. The company’s customer base is populated by various sectors including transportation, telecom, health care, manufacturing, energy, government, and education.
+## 3. KONUX
+KONUX is a Munich-based analytics and sensor company, combining the German engineering quality with Silicon Valley’s innovation and speed. The startup develops customized smart sensors and uses artificial intelligence-based data analytics to generate real-time insights into the health of infrastructure and machines. The startup aims to solve complex technical challenges and help the customers to become data-driven industrial companies. As of now, KONUX is digitizing the Deutsche Bahn High-Speed Railway Network by providing condition monitoring (which is a critical part of the railway infrastructure) for crossing and switches.
+In February, the company secured $13 million in the Series B funding round from some of the new investors that include the MIG AG, Alibaba Group, Upbeat ventures, and New Enterprises Associates. KONUX will use the funds to expand its business to new geographies including China, which is the world’s fastest-growing railway market. The company has raised a total of $51.5 million in over six funding rounds and generates $10 million in revenue annually.
+## Kalera
+We are a science and technology-driven company dedicated to growing the very best possible produce.  Kalera is smart horticulture at its best. We work with nature to help plants grow abundantly, year-round.  We focus on clean, safe, healthy, tasty greens and on the efficiencies of growing locally in controlled environments.              
+Our vertical hydroponic farms use cleanroom technology, IoT, AI and big data analytics to create perfect conditions for growing a wide variety of lettuces, baby greens, herbs and edible flowers, year-round. We keep away pests, bugs and germs without ever using any pesticides or insecticides. Our growing cycles are simply not affected by the weather. Finally, we grow locally, so there is virtually no wasteful transportation     
