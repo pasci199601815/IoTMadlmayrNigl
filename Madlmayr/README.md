@@ -52,37 +52,39 @@
 + [Project 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Project1)
 + [Project 2](https://drive.google.com/file/d/1mhy01Uc7yZ5n6DLwcsP5O0r23wMvCdMc/view?usp=drivesdk)
 ## TA (helped me)
-Anna Spiegelmayer helped me with Flogo
++ Michael Leister helped me with installing docker quickstart terminal (siehe Lernplattform)
 
-Micheal Wachlhofer helped me with Rgb-strip and Wemos
++ Anna Spiegelmayr helped me with Flogo-flow and branching
 
-Micheal Leister helped me with setting up MQTT
++ Micheal Wachlhofer helped me with Rgb-strip and Wemos
 
-Harald Burgstaller helped me with toggeling the LED with our WEMOS
++ Martin Rehrl helped me with building the simulators (integrator..)
 
-Ulrich helped us in every Lab with most of our problems ;)
++ Harald Burgstaller helped me with toggeling the LED with our WEMOS
+
++ Last but not least: Ulrich was very willing to help us and provided us with hints and clues how to solve most problems that occured during the labs (big thank you!)
 ## TA (I helped)
-I helped Micheal Wachlhofer and Anna Spiegelmayer with setting up IOTEmpower
+I helped Micheal Wachlhofer and Anna Spiegelmayr with setting up IOTEmpower
 
-I helped Micheal Leister with Node-Red (sent him old script)
+I helped Martin Rehrl to document his Coap lab exactly (sent him a picture)
 
-I helped Micheal Wachlhofer with calibration the scale and get infos from mqtt topic 
+I helped Micheal Wachlhofer with calibration the scale and provided the topic names and values for mqtt calibration
 ## Video Bewertung
 ### IOT Vineyard:
-Most entertaining video
++ Most entertaining video
 
-Good visuals
++ very cool intro and outro
 
-Not a big fan of the machine voices
++ those noises were a bit overdone, but nice nontheless
 ### IOT Museum:
-Audio qualiy not the best
++ Audio qualiy not the best
 
-Good demonsration of sensors trough the video
++ Very well made presentation on how the sensors work, especially the alarm sound in FH2 building
 
-Sometimes dull
++ Sometimes dull
 ### IOT Fitness:
-Very funnny
++ I like the style of having a miniature fitness studio
 
-Nicely made with the cardboard sensors
++ flow of the video provides an oversight on how exactly the product works
 
-Last part too long with nodered
++ node red was long but informative
