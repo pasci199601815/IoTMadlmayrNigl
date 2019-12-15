@@ -132,6 +132,10 @@ void loop() {
 ````
 ### Raindropsensor
 
+The raindrop sensor (see figure below) was used to measure different liquid levels.
+
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/blob/master/Project1/raindrop.jpg "Regentropfsensor")
+
 ## Regentropf Sensor Tabelle
 |Trinkwasser|Schmutzwasser|Öl|
 |---|---|---|
@@ -191,7 +195,7 @@ void loop(){
 |---|---|---|
 |7,5cm|7,5cm|7,5cm|
 
-Der Ultraschallsensor liefert unabhängig von der Art der Flüssigkeit korrekte Werte und eignet sich damit, um den Füllstand eines Tankes messen zu können.
+The ultrasonic sensor provides correct values regardless of the type of liquid and is therefore suitable for measuring the level of a tank.
 
 Ultrasonic sensor is installed easily with IOTempore. We need just one line:
 ````
