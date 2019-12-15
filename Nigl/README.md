@@ -44,8 +44,31 @@
 + [Lab 5](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab05)
 + [Lab 6](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab06)
 + [Lab 7](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Lab-Exercises/Lab07)
-## Recaps
 
 ## Projects
 + [Project 1](https://github.com/pasci199601815/IoTMadlmayrNigl/tree/master/Project1)
 + [Project 2](https://drive.google.com/file/d/1mhy01Uc7yZ5n6DLwcsP5O0r23wMvCdMc/view?usp=drivesdk)
+## TA
++ Anna Spiegelmayer helped me with Flogo
++ Micheal Wachlhofer helped me with Rgb-strip and Wemos
++ Micheal Leister helped me with setting up MQTT
++ Harald Burgstaller helped me with toggeling the LED with our WEMOS
++ Ulrich helped us in every Lab with most of our problems ;)
+
++ I helped Micheal Wachlhofer and Anna Spiegelmayer with setting up IOTEmpower
++ I helped Micheal Leister with Node-Red (sent him old script)
++ I helped Micheal Wachlhofer with calibration the scale and get infos from mqtt topic 
+
+## Video bewertung
+### IOT Vineyard:
+Most entertaining video
+Good visuals
+Not a big fan of the machine voices
+### IOT Museum:
+Audio qualiy not the best
+Good demonsration of sensors trough the video
+Sometimes dull
+### IOT Fitness:
+Very funnny
+Nicely made with the cardboard sensors
+Last part too long with nodered
