@@ -13,3 +13,12 @@
 + When we switched to D5 & D6 we got finally values
 + Ulrich then showed us how to calibrate the scale with mqtt because we didn't saw that part in the docu
 + We calibrated the scale and got the correct values on our weights
+
+## Code
+````
+Scale
+hx711(scale, D5, D6, 385, true);
+````
+We then calibrated the scale by sending MQTT-messages to a specific topic and then used the 50- and 100-grams weights to get correct readings on our node red dashboard:
+
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/edit/master/Lab-Exercises/Lab07/scale.jpg)
