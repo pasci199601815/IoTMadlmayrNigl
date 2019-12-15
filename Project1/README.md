@@ -212,7 +212,9 @@ Buzzer sensor is installed easily with IOTempore. We need just one line:
 ````
 pwm(buzzer, D6, 0);
 ````
-
+## Node RED
+### How the Node RED interface looked like
+![](https://github.com/pasci199601815/IoTMadlmayrNigl/edit/master/Project1/gg.jpg)
 ## Use Case - Story
 
 ### Robert checks his houseboat's fuel tank via a distance sensor and the power of IoT
